@@ -4,34 +4,79 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>合同会社OMOI</title>
+    <link rel="stylesheet" href="memu.css">
     <link rel="stylesheet" href="stylesheet.css">
   </head>
   <body>
-    <ul class="flex-list">
-      <li class="li1">item1</li>
-      <li class="li2">item2</li>
-      <li class="li3">item3</li>
-      <li class="li4">item4</li>
-    </ul>
-  </body>
-  
-  		  <header>
-        <!-- メニュー -->
-        <nav class="nav is-fixed" role="navigation">
-          <button class="nav-toggle">
-          <div class="icon-menu"> <span class="line line-1"></span> <span class="line line-2"></span> <span class="line line-3"></span> </div>
-          </button>
-          <div class="nav-container">
-            <ul class="nav-menu menu">
-              <li class="menu-item"> <a href="#!" class="menu-link">Home</a> </li>
-              <li class="menu-item"> <a href="#!" class="menu-link">Service</a> </li>
-              <li class="menu-item"> <a href="#!" class="menu-link">Contact</a> </li>
-            </ul>
-          </div>
-        </nav>
 
-        <h1>現役システムエンジニア<span class="br1">の</span><span class="br2">個人サービス</span></h1>
-		  </header>
-  
-  
+    <!-- メニュー -->
+    <header id="luxbar" class="luxbar-fixed">
+            <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
+            <div class="luxbar-menu luxbar-menu-right luxbar-menu-material-cyan">
+                <ul class="luxbar-navigation">
+                    <li class="luxbar-header">
+                        <a href="#" class="luxbar-brand">OMOI</a>
+                        <label class="luxbar-hamburger luxbar-hamburger-spin" id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
+                    </li>
+                    <li class="luxbar-item"><a href="#">OMOI</a></li>
+        
+                    <li class="luxbar-item"><a href="#">サービス</a></li>
+                      <!--
+                      <div class="sub-menu">
+                        <ul>
+                          <li><a href="#">Sub Menu1</a></li>
+                          <li><a href="#">Sub Menu1</a></li>
+                          <li><a href="#">Sub Menu1</a></li>
+                        </ul>
+                      </div>
+                      -->
+                    <li class="luxbar-item"><a href="#">料金</a></li>
+        
+                    <li class="luxbar-item"><a href="#">お問合せ</a></li>
+                </ul>
+            </div>
+    </header>
+
+    <div class="top">
+        <h1>オモイ<span class="br br1">の</span><span class="br br2">ITサービス</span></h1>
+        <p class="top-omoi">OMOI</p>
+    </div>
+
+    <ul class="flex-list">
+        <li class="li1">
+            <div class="service1">
+                <h2>運用業務のご相談</h2>
+            </div>
+        </li>
+        <li class="li2">
+            <div class="service2">
+                <h2>ランディングページ制作（LP制作）</h2>
+            </div>
+        </li>
+        <li class="li3">
+            <div class="service3">
+                <h2>データ移行</h2>
+            </div>
+        </li>
+    </ul>
+  <footer>
+
+  </footer>
+    <div class="footer-content">
+        <div class="contact">
+            <ul class="footer-relation__list">
+                <li class="footer-relation__item"><a class="footer-relation__link" href="https://profile.coconala.com/users/1284448" target="_blank">coconala</a></li>
+                <li class="footer-relation__item"><a class="footer-relation__link" href="https://crowdworks.jp/public/employees/2614376?ref=mypage_nav1_account" target="_blank">CrowdWorks</a></li>
+                <li class="footer-relation__item"><a class="footer-relation__link" href="https://www.lancers.jp/profile/ts_omoi?ref=header_menu" target="_blank">Lancers</a></li>
+                <li class="footer-relation__item">ts_omoi@outlook.com</li>
+            </ul>
+        </div>
+        <div class="cp">
+            <div class="cp nm">
+                © OMOI
+            </div>
+        </div>
+    </div>
+  </body>
+
 </html>
