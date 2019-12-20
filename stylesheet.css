@@ -372,47 +372,39 @@ h1 {
 
 /* flexbox */
  .flex-list {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
   }
   .li1, .li2, .li3 {
-    height: 300px;
-    line-height: 80px;
+    width: 32%;
+    height: auto;
+    padding: 1em;
     border: solid #616161;
-    min-width: 0;
+    box-sizing: border-box;
+    flex-basis: 300px;
   }
   
-  .flex-list {
-    display: flex;
-  }
   .flex-list li {
     flex: auto;
   }
-
-  /* タブレット向けレイアウト */
-  @media (max-width: 1000px) {
-    .flex-list {
-      flex-wrap: wrap;
-    }
-    .flex-list li {
-      width: 50%;
-    }
-  }
   
   /* スマホ向けレイアウト */
-  /* ブレイクポイントが670px以下の時のメディアクエリを設定してください */
-  @media (max-width: 670px) {
+  /* ブレイクポイントが767px以下の時のメディアクエリを設定してください */
+  @media (max-width: 767px) {
     /* .flex-listにflex-directionを指定してください */
     .flex-list {
+      display: flex;
       flex-direction: column;
     }
     
     /* .flex-list liにmarginを0 autoに指定してください */
-    .flex-list li {
+    .li1, .li2, .li3 {
       margin: 0 auto;
-      margin-top: 2px;
+      width: 300px;
+      flex-shrink: 0;
     }
     
   }
