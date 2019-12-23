@@ -369,6 +369,11 @@ h1 {
     white-space: pre;
 }
 
+.service-icon {
+    width: 60%;
+    text-align: center;
+}
+
 /* flexbox */
  .flex-list {
     display: flex;
