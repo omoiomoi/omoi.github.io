@@ -361,7 +361,7 @@
     text-align: center;
 }
 .service-icon-img {
-    width: 50%;
+    width: 30%;
     padding: 20px 0;
 }
 h2 {
@@ -417,7 +417,7 @@ h2 {
     .li1, .li2, .li3 {
       margin: 0 auto;
       margin-bottom: 3px;
-      width: 400px;
+      width: 300px;
       flex-shrink: 0;
     }
 
