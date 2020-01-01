@@ -346,31 +346,25 @@
 /*# sourceMappingURL=luxbar.min.css.map */
 
 
-h1 {
-    margin: 70px 0px 80px 80px;
-    border-bottom: solid #c0c0c0
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.top-pc {
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+}
+.top-sp {
+    display: none;
 }
 
-.top {
-    position: relative;
-}
-
-.top-omoi {
-    position: absolute;
-    bottom: -100px;
-    right: 100px;
-    @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
-    font-family: 'Ubuntu Mono', monospace;
-    font-size: 30px;
-}
-
-.br::before {
-    content: "\A";
-    white-space: pre;
-}
 
 .service-icon {
-    width: 60%;
+    text-align: center;
+}
+.service-icon-img {
+    width: 50%;
+    padding: 20px 0;
+}
+h2 {
     text-align: center;
 }
 
@@ -389,16 +383,30 @@ h1 {
     border: solid #00838f;
     box-sizing: border-box;
     flex-basis: 300px;
-    margin: 0 5px 5px 0;
+    margin: 0 10px 10px 0;
   }
   
   .flex-list li {
     flex: auto;
   }
   
+.service1-text, .service2-text, .service3-text {
+    padding: 0 20px;
+    letter-spacing: 0.4em;
+    line-height: 1.8em;
+}
+
   /* スマホ向けレイアウト */
   /* ブレイクポイントが767px以下の時のメディアクエリを設定してください */
   @media (max-width: 767px) {
+
+    .top-pc {
+        display: none;
+    }
+    .top-sp {
+        display: block;
+    }
+
     /* .flex-listにflex-directionを指定してください */
     .flex-list {
       display: flex;
@@ -409,13 +417,12 @@ h1 {
     .li1, .li2, .li3 {
       margin: 0 auto;
       margin-bottom: 3px;
-      width: 300px;
+      width: 400px;
       flex-shrink: 0;
     }
 
     .li3 {
         margin: 0 auto;
-        width: 300px;
         flex-shrink: 0;
       }
     
