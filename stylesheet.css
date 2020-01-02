@@ -384,6 +384,7 @@ h2 {
     box-sizing: border-box;
     flex-basis: 300px;
     margin: 0 10px 10px 0;
+    position: relative;
   }
   
   .flex-list li {
@@ -394,6 +395,27 @@ h2 {
     padding: 0 20px;
     letter-spacing: 0.4em;
     line-height: 1.8em;
+}
+
+.service1-text p, .service2-text p, .service3-text p {
+    margin-bottom: 80px;
+}
+
+.service-more {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+}
+
+.service-more a {
+    text-decoration:none;
+    color: black;
+}
+
+.link-block {
+    border: solid 1px;
+    padding: 10px 30px;
 }
 
   /* スマホ向けレイアウト */
@@ -419,6 +441,7 @@ h2 {
       margin-bottom: 3px;
       width: 300px;
       flex-shrink: 0;
+      font-size: 80%;
     }
 
     .li3 {
@@ -431,21 +454,33 @@ h2 {
 
 
 .footer-content {
-    background-color: #3cafb8;
+    background-color: #006064; color:#fff;
     min-height: 40vh;
     position: relative;
 }
 
 .contact {
     text-align: center;
+    letter-spacing: 0.5em;
+    padding-top: 10px;
+}
+
+.container p {
+    padding-left: 20px;
 }
 
 .footer-relation__list {
-    padding-top: 20px;
+    padding: 10px 20px 20px 30px;
+    line-height: 2em;
 }
 
 .footer-relation__item {
     list-style: none;
+}
+
+.footer-relation__link {
+    color:#fff;
+    text-decoration:none; 
 }
 
 .cp {
